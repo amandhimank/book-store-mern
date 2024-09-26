@@ -1,14 +1,14 @@
 const Course = () => {
   return (
-    <div className="card cursor-pointer">
-      <div className="card bg-white w-80 shadow-xl">
+    <div className="card cursor-pointer hover:scale-[1.05] transition">
+      <div className="card bg-white dark:bg-slate-800 w-80 shadow-xl">
         <figure>
           <img
             src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
             alt="Shoes"
           />
         </figure>
-        <div className="card-body text-black">
+        <div className="card-body text-black dark:text-zinc-300">
           <h2 className="card-title">
             Books
             <div className="badge badge-secondary text-white hover:text-pink-500 hover:bg-white">Paid</div>

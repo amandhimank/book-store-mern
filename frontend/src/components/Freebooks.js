@@ -4,6 +4,17 @@ import React from "react";
 import Slider from "react-slick";
 import FreeCard from "./FreeCard";
 
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", mixBlendMode: 'difference' }}
+      onClick={onClick}
+    />
+  );
+}
+
 const Freebooks = () => {
     var settings = {
           dots: true,
@@ -12,6 +23,8 @@ const Freebooks = () => {
           slidesToShow: 3,
           slidesToScroll: 3,
           initialSlide: 0,
+          nextArrow: <SamplePrevArrow />,
+          prevArrow: <SamplePrevArrow />,
           responsive: [
             {
               breakpoint: 1024,
@@ -45,7 +58,7 @@ const Freebooks = () => {
             <h3 className="text-3xl text-green-500 font-semibold">Free Books for Every Reader!</h3>
             <p className="text-zinc-500 font-medium mt-4">Join us in celebrating the joy of reading with our selection of free books. These carefully chosen titles span genres and topics, offering something for everyone. Dive into the world of literature without any financial barriers. Start exploring our free books today and ignite your passion for reading!</p>
 
-            <div className="slider-container my-10">
+            <div className="slider-container my-10 px-3 md:px-0">
                 <Slider {...settings}>
                   <FreeCard />
                   <FreeCard />

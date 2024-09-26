@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "e-commerce website frontend",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html",
     "test": "jest"
   },
   "author": "",
@@ -19,6 +19,7 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-hook-form": "^7.53.0",
     "react-router-dom": "^6.26.2",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1"
